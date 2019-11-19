@@ -1,0 +1,17 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [
+    110
+  ],
+  "editor.detectIndentation": false,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 3000,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "[javascript]": {
+    "files.insertFinalNewline": true
+  },
+  "javascript.validate.enable": false,
+  "eslint.enable": true,
+  "npm.enableScriptExplorer": true
+}
