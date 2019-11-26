@@ -9,7 +9,8 @@
   "files.trimTrailingWhitespace": true,
   "files.eol": "\n",
   "[javascript]": {
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "javascript.validate.enable": false,
   "eslint.enable": true,

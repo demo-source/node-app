@@ -2,7 +2,16 @@
   "description": "Example Node.js application",
   "repository": "github:demo-source/node-app",
   "license": "Unlicense",
-  "dependencies": {
+  "type": "module",
+  "exports": {
+    ".": "./src/example.js"
+  },
+  "scripts": {
+    "test": "node test/init.cjs && node test/run",
+    "coverage": "node test/init-babel.cjs && nyc node test/run-babel.cjs"
+  },
+  "devDependencies": {
+    "@nodutilus/fs": "latest",
     "eslint-config-standard": "latest",
     "eslint-plugin-standard": "latest",
     "eslint-plugin-promise": "latest",
@@ -10,7 +19,27 @@
     "eslint-plugin-node": "latest",
     "babel-eslint": "latest",
     "eslint": "latest",
+    "@babel/core": "latest",
+    "@babel/cli": "latest",
+    "@babel/register": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "babel-plugin-istanbul": "latest",
     "nyc": "latest"
   },
-  "main": "test.js"
+  "eslintIgnore": [
+    "test/node_modules"
+  ],
+  "nyc": {
+    "require": [
+      "@babel/register"
+    ],
+    "reporter": [
+      "lcov",
+      "text",
+      "html"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  }
 }

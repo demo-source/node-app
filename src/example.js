@@ -1,8 +1,8 @@
-class Test {
-  #private = 1
+export class Test {
+  #test1 = 'test: '
+  #test2 = () => 'ok'
+
   getResult() {
-    return this.#private
+    return this.#test1 + this.#test2()
   }
 }
-
-exports.Test = Test
