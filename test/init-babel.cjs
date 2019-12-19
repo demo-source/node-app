@@ -1,7 +1,7 @@
 const { remove, readJSON, writeJSON } = require('@nodutilus/fs')
 const { execSync } = require('child_process')
 const app = async () => {
-  const command = 'babel src -d test/node_modules/node-app-babel/src'
+  const command = 'npx babel src -d test/node_modules/node-app-babel/src'
   const packageJSON = await readJSON('package.json')
 
   await remove('test/node_modules/node-app-babel')
