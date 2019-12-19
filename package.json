@@ -22,7 +22,7 @@
     "@babel/core": "latest",
     "@babel/cli": "latest",
     "@babel/register": "latest",
-    "@babel/preset-env": "latest",
+    "@babel/plugin-transform-modules-commonjs": "latest",
     "@babel/plugin-proposal-class-properties": "latest",
     "babel-plugin-istanbul": "latest",
     "nyc": "latest"
