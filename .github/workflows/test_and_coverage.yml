@@ -15,4 +15,10 @@ jobs:
 
     - run: npm install
     - run: npm test
+    - run: npx babel lib-sample -d cjs/lib-sample
+      env:
+        NODE_ENV: test
+    - run: npx babel test -d cjs/test
+      env:
+        NODE_ENV: test
     - run: npm run coverage

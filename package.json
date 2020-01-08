@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "node test",
-    "coverage": "node build && npx nyc node cjs/test"
+    "coverage": "nyc node cjs/test"
   },
   "devDependencies": {
     "@babel/cli": "latest",
