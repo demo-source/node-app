@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "node test",
-    "coverage": "nyc node cjs/test"
+    "coverage": "nyc node test"
   },
   "devDependencies": {
     "@babel/register": "latest",
@@ -24,10 +24,7 @@
     "eslint-plugin-standard": "latest",
     "nyc": "latest"
   },
-  "eslintIgnore": [
-    "cjs/lib-sample",
-    "cjs/test"
-  ],
+  "eslintIgnore": [],
   "babel": {
     "plugins": [
       "babel-plugin-istanbul",
