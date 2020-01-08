@@ -14,12 +14,12 @@
     "coverage": "nyc node test"
   },
   "devDependencies": {
-    "@babel/register": "latest",
     "@babel/plugin-proposal-class-properties": "latest",
     "@babel/plugin-transform-modules-commonjs": "latest",
+    "@babel/register": "latest",
     "babel-eslint": "latest",
-    "babel-plugin-istanbul": "latest",
     "babel-hook-esm-to-cjs-package-type-runtime": "latest",
+    "babel-plugin-istanbul": "latest",
     "eslint": "latest",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",
