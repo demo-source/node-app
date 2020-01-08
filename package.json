@@ -19,6 +19,7 @@
     "@babel/plugin-transform-modules-commonjs": "latest",
     "babel-eslint": "latest",
     "babel-plugin-istanbul": "latest",
+    "babel-hook-esm-to-cjs-package-type-runtime": "latest",
     "eslint": "latest",
     "eslint-config-standard": "latest",
     "eslint-plugin-import": "latest",
@@ -37,7 +38,7 @@
   },
   "nyc": {
     "require": [
-      "./update-package.cjs",
+      "babel-hook-esm-to-cjs-package-type-runtime",
       "@babel/register"
     ],
     "reporter": [
