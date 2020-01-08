@@ -30,7 +30,7 @@
   ],
   "babel": {
     "plugins": [
-      "istanbul",
+      "babel-plugin-istanbul",
       "@babel/plugin-transform-modules-commonjs",
       "@babel/plugin-proposal-class-properties"
     ]
