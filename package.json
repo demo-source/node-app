@@ -3,6 +3,9 @@
   "repository": "github:demo-source/node-app",
   "license": "Unlicense",
   "type": "module",
+  "engines": {
+    "node": ">=13"
+  },
   "exports": {
     ".": "./lib-sample/example.js"
   },
