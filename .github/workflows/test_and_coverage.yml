@@ -4,21 +4,13 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@master
-    - uses: actions/setup-node@master
-      with:
-        node-version: 13
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 13
 
-    - run: npm install
-    - run: npm test
-    - run: npx babel lib-sample -d cjs/lib-sample
-      env:
-        NODE_ENV: test
-    - run: npx babel test -d cjs/test
-      env:
-        NODE_ENV: test
-    - run: npm run coverage
+      - run: npm install
+      - run: npm test
+      - run: npm run coverage

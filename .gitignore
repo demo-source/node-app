@@ -19,7 +19,3 @@ node_modules/
 
 # Output of 'npm pack'
 *.tgz
-
-# next.js build output
-cjs/lib-sample/
-cjs/test/

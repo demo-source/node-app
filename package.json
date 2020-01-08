@@ -11,7 +11,7 @@
     "coverage": "nyc node cjs/test"
   },
   "devDependencies": {
-    "@babel/cli": "latest",
+    "@babel/register": "latest",
     "@babel/plugin-proposal-class-properties": "latest",
     "@babel/plugin-transform-modules-commonjs": "latest",
     "babel-eslint": "latest",
@@ -30,18 +30,16 @@
   ],
   "babel": {
     "plugins": [
+      "istanbul",
       "@babel/plugin-transform-modules-commonjs",
       "@babel/plugin-proposal-class-properties"
-    ],
-    "env": {
-      "test": {
-        "plugins": [
-          "istanbul"
-        ]
-      }
-    }
+    ]
   },
   "nyc": {
+    "require": [
+      "./update-package.cjs",
+      "@babel/register"
+    ],
     "reporter": [
       "lcov",
       "text",
