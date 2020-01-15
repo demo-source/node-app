@@ -12,5 +12,6 @@ jobs:
           node-version: 13
 
       - run: npm install
-      - run: npm test
-      - run: npm run coverage
+      - run: npx nodutilus-eslint
+      - run: node test
+      - run: npx nodutilus-nyc
